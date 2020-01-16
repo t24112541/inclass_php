@@ -1,0 +1,711 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+<!--
+body { font-family: "MS Sans Serif", "Microsoft Sans Serif"; font-size: 10pt}
+a:link { color:#0000FF; text-decoration:none }
+a:visited { color:#0000FF; text-decoration:none }
+a:active { color:#0099FF; text-decoration:underline }
+a:hover { color:#0099FF; text-decoration:underline }
+td { font-family: "MS Sans Serif", "Microsoft Sans Serif"; font-size: 10pt}
+-->
+</style>
+
+<center>
+<table border="0" cellpadding="2" cellspacing="3">
+<tr align="center">
+	<td colspan="5"><font size="+1"><b>สอบถามข้อมูล</b></font></td>
+</tr>
+<tr align="center">
+	<td><b>|</b> <a href="dataQuerySelector.jsp?query=teachTab" target="detail"><b>ตารางสอน</b></a></td>
+	<td><b>|</b> <a href="dataQuerySelector.jsp?query=studentTab" target="detail"><b>ตารางเรียน</b></a></td>
+	<td><b>|</b> <a href="dataQuerySelector.jsp?query=examTab" target="detail"><b>ตารางสอบ</b></a></td>
+	<td><b>|</b> <a href="dataQuerySelector.jsp?query=roomTab" target="detail"><b>การใช้งานห้องเรียน</b></a> </td>
+	<td><b>|</b> <a href="dataQuerySelector.jsp?query=openSectionTab" target="detail"><b>ตอนเรียนที่เปิด</b></a> <b>|</b> </td>
+</tr>
+</table>
+</center>
+
+</body>
+</html>
+
+	
+<table border="0" width="100%" align="center">
+<tr align="center" bgcolor="#1E90FF"><td>
+	<font size="+1" color="#FFFFFF"><b>ตารางการใช้งานห้องเรียน</b></font>
+</td></tr>
+
+<tr><td>
+	<form method="post" action="">
+	
+	<table align="center" border="0">
+	<tr><td align="right"><b>อาคาร </b></td>
+	<td><select name="buildingAreaNo" onChange="form.submit()">
+	<option value="">- - - เลือกอาคาร - - -</option>
+	
+		<option value="1-*"
+		>
+			* คณะวิศวกรรมศาสตร์(ปราจีน)
+		</option>
+	
+		<option value="1-01"
+		>
+			01 วท.ยโสธร
+		</option>
+	
+		<option value="1-02"
+		>
+			02 วท.นครศรีธรรมราช
+		</option>
+	
+		<option value="1-03"
+		>
+			03 วท.ลำปาง
+		</option>
+	
+		<option value="1-04"
+		>
+			04 วท.พะเยา.
+		</option>
+	
+		<option value="1-05"
+		>
+			05 วท.เพชรบุรี
+		</option>
+	
+		<option value="1-07"
+		>
+			07 รร.พระรามหก
+		</option>
+	
+		<option value="1-08"
+		>
+			08 พระดาบส
+		</option>
+	
+		<option value="1-21"
+		>
+			21 อาคารนวมินทรราชินี
+		</option>
+	
+		<option value="1-25"
+		>
+			25 อาคารอเนกประสงค์
+		</option>
+	
+		<option value="1-31"
+		>
+			31 อาคารนวมินทรราชินี
+		</option>
+	
+		<option value="1-4"
+		>
+			4 TGGS
+		</option>
+	
+		<option value="1-40"
+		>
+			40 อาคารกิจกรรมนักศึกษา
+		</option>
+	
+		<option value="1-41"
+		 selected>
+			41 คณะสถาปัตยกรรมและการออกแบบ
+		</option>
+	
+		<option value="1-42"
+		>
+			42 อาคารโยธา
+		</option>
+	
+		<option value="1-43"
+		>
+			43 TFIC
+		</option>
+	
+		<option value="1-44"
+		>
+			44 ปฏิบัติการและประลองรวม
+		</option>
+	
+		<option value="1-45"
+		>
+			45 อาคาร 45
+		</option>
+	
+		<option value="1-46"
+		>
+			46 ศิลปศาสตร์ประยุกต์
+		</option>
+	
+		<option value="1-47"
+		>
+			47 ศูนย์วิจัย
+		</option>
+	
+		<option value="1-52"
+		>
+			52 อาคารคณะครุศาสตร์อุตสาหกรรม
+		</option>
+	
+		<option value="1-62"
+		>
+			62 วิทยาลัยเทคโนโลยีอุตสาหกรรม(ใหม่)
+		</option>
+	
+		<option value="1-63"
+		>
+			63 อาคารเรียนวิทยาลัยเทคโนโลยีอุตสาหกรรม
+		</option>
+	
+		<option value="1-64"
+		>
+			64 อาคารเรียน RM
+		</option>
+	
+		<option value="1-65"
+		>
+			65 อาคารเรียนวิทยาลัยเทคโนโลยีอุตสาหกรรม
+		</option>
+	
+		<option value="1-66"
+		>
+			66 อาคารเรียนพิเศษ
+		</option>
+	
+		<option value="1-69"
+		>
+			69 วทอ.
+		</option>
+	
+		<option value="1-71"
+		>
+			71 อาคารเก็บสารเคมี
+		</option>
+	
+		<option value="1-72"
+		>
+			72 ยิมเนเซียม
+		</option>
+	
+		<option value="1-75"
+		>
+			75 อาคารปฏิบัติการเฉพาะทาง
+		</option>
+	
+		<option value="1-76"
+		>
+			76 สำนักพัฒนาเทคนิคศึกษา
+		</option>
+	
+		<option value="1-78"
+		>
+			78 อาคารคณะวิทยาศาสตร์ประยุกต์
+		</option>
+	
+		<option value="1-81"
+		>
+			81 อาคารเรียนรวมคณะวิศวกรรมศาสตร์
+		</option>
+	
+		<option value="1-82"
+		>
+			82 อาคาร 82
+		</option>
+	
+		<option value="1-83"
+		>
+			83 อาคาร 83
+		</option>
+	
+		<option value="1-84"
+		>
+			84 อาคาร 84
+		</option>
+	
+		<option value="1-85"
+		>
+			85 อาคาร 85
+		</option>
+	
+		<option value="1-86"
+		>
+			86 อาคาร 86
+		</option>
+	
+		<option value="1-88"
+		>
+			88 อาคาร  88
+		</option>
+	
+		<option value="1-89"
+		>
+			89 อาคาร 89
+		</option>
+	
+		<option value="1-90"
+		>
+			90 ศูนย์บ่มเพาะเทคโนโลยี
+		</option>
+	
+		<option value="1-91"
+		>
+			91 ศูนย์บ่มเพาะเทคโนโลยี
+		</option>
+	
+		<option value="1-92"
+		>
+			92 โรงเรียนเตรียมฯ
+		</option>
+	
+		<option value="1-95"
+		>
+			95 อาคารวิทยาลัยนานาชาติ
+		</option>
+	
+		<option value="1-96"
+		>
+			96 คณะพัฒนาธุรกิจและอุตสาหกรรม
+		</option>
+	
+		<option value="1-97"
+		>
+			97 โรงเรียนเตรียมฯ
+		</option>
+	
+		<option value="2-1"
+		>
+			*1 อาคารคณะเทคโนโลยีและการจัดการอุตสาหกรรม
+		</option>
+	
+		<option value="2-2"
+		>
+			*2 อาคารเรียนรวม
+		</option>
+	
+		<option value="2-3"
+		>
+			*3 อาคารบริหาร
+		</option>
+	
+		<option value="2-4"
+		>
+			*4 สำนักคอม-อาคารหอสมุด
+		</option>
+	
+		<option value="2-42"
+		>
+			*42 อาคารบริหาร
+		</option>
+	
+		<option value="2-48"
+		>
+			*48 อาคารคณะอุตสาหกรรมเเกษตร
+		</option>
+	
+		<option value="2-55"
+		>
+			*55 คณะบริหารธุรกิจและอุตสาหกรรมบริการ
+		</option>
+	
+		<option value="2-56"
+		>
+			*56 อาคารปฏิบัติการท่องเที่ยวและโรงแรม 
+		</option>
+	
+		<option value="2-SP"
+		>
+			*SP อาคารเฉลิมพระเกียรติ
+		</option>
+	
+		<option value="2-T"
+		>
+			*T คณะวิศวกรรมศาสตร์ 
+		</option>
+	
+		<option value="2-Th"
+		>
+			*Th Villa Vicahalai
+		</option>
+	
+		<option value="3-11"
+		>
+			**11 อาคารเอนกประสงค์
+		</option>
+	
+		<option value="3-21"
+		>
+			**21 คณะบริหารธุรกิจ
+		</option>
+	
+		<option value="3-41"
+		>
+			**41 อาคารปฏิบัติการพื้นฐานทางวิศวกรรมศาสตร์
+		</option>
+	
+		<option value="3-42"
+		>
+			**42 อาคารวิทยาศาสตร์การกีฬาและโรงอาหาร
+		</option>
+	
+		<option value="3-51"
+		>
+			**51 อาคารปฏิบัติการรวมด้านวิศวกรรมศาสตร์และเทคโนโลยี
+		</option>
+	
+		<option value="3-52"
+		>
+			**52 อาคารเรียนรวม
+		</option>
+	
+		<option value="3-53"
+		>
+			**53 คณะวิทยาศาสตร์ พลังงานและสิ่งแวดล้อม
+		</option>
+	
+	</select></td></tr>
+
+	<tr><td align="right"><b>ห้องเรียน </b></td> 
+	<td><select name="roomNo" onChange="form.submit()">
+	<option value="">- - - เลือกห้องเรียน - - -</option>
+	
+		<option value="1001"
+		>
+		1001 (L)
+		</option>
+	
+		<option value="1002"
+		>
+		1002 (L)
+		</option>
+	
+		<option value="203"
+		>
+		203 (L)
+		</option>
+	
+		<option value="204"
+		>
+		204 (L)
+		</option>
+	
+		<option value="205"
+		>
+		205 (L)
+		</option>
+	
+		<option value="206"
+		>
+		206 (S)
+		</option>
+	
+		<option value="207"
+		>
+		207 (S)
+		</option>
+	
+		<option value="301"
+		>
+		301 (S)
+		</option>
+	
+		<option value="302"
+		>
+		302 (S)
+		</option>
+	
+		<option value="303"
+		>
+		303 (S)
+		</option>
+	
+		<option value="304"
+		>
+		304 (L)
+		</option>
+	
+		<option value="305"
+		>
+		305 (L)
+		</option>
+	
+		<option value="306"
+		>
+		306 (S)
+		</option>
+	
+		<option value="307"
+		 selected>
+		307 (L)
+		</option>
+	
+		<option value="308"
+		>
+		308 (S)
+		</option>
+	
+		<option value="41-ACADIA"
+		>
+		41-ACADIA (S)
+		</option>
+	
+		<option value="502"
+		>
+		502 (L)
+		</option>
+	
+		<option value="503"
+		>
+		503 (L)
+		</option>
+	
+		<option value="504"
+		>
+		504 (L)
+		</option>
+	
+		<option value="505"
+		>
+		505 (L)
+		</option>
+	
+		<option value="506"
+		>
+		506 (S)
+		</option>
+	
+		<option value="507"
+		>
+		507 (L)
+		</option>
+	
+		<option value="602"
+		>
+		602 (L)
+		</option>
+	
+		<option value="603"
+		>
+		603 (L)
+		</option>
+	
+		<option value="604"
+		>
+		604 (L)
+		</option>
+	
+		<option value="605"
+		>
+		605 (L)
+		</option>
+	
+		<option value="606"
+		>
+		606 (S)
+		</option>
+	
+		<option value="702"
+		>
+		702 (S)
+		</option>
+	
+		<option value="703"
+		>
+		703 (S)
+		</option>
+	
+		<option value="704"
+		>
+		704 (S)
+		</option>
+	
+		<option value="705"
+		>
+		705 (S)
+		</option>
+	
+		<option value="706"
+		>
+		706 (S)
+		</option>
+	
+		<option value="707"
+		>
+		707 (L)
+		</option>
+	
+		<option value="802"
+		>
+		802 (S)
+		</option>
+	
+		<option value="803"
+		>
+		803 (S)
+		</option>
+	
+		<option value="804"
+		>
+		804 (S)
+		</option>
+	
+		<option value="805"
+		>
+		805 (S)
+		</option>
+	
+		<option value="806"
+		>
+		806 (S)
+		</option>
+	
+		<option value="900"
+		>
+		900 (L)
+		</option>
+	
+		<option value="901"
+		>
+		901 (S)
+		</option>
+	
+		<option value="902"
+		>
+		902 (L)
+		</option>
+	
+		<option value="903"
+		>
+		903 (L)
+		</option>
+	
+		<option value="904"
+		>
+		904 (L)
+		</option>
+	
+		<option value="905"
+		>
+		905 (L)
+		</option>
+	
+		<option value="906"
+		>
+		906 (L)
+		</option>
+	
+		<option value="CM-SHOP"
+		>
+		CM-SHOP (L)
+		</option>
+	
+		<option value="CM-SHOP1"
+		>
+		CM-SHOP1 (S)
+		</option>
+	
+		<option value="CRYSTAL "
+		>
+		CRYSTAL  (S)
+		</option>
+	
+	</select></td></tr>
+	<tr><td><b>ช่วงความถี่ </b></td>
+		<td><select name="timePrecision" onChange="form.submit()">
+		<option value="1" >15 นาที</option>
+		<option value="2" >30 นาที</option>
+		<option value="4"  selected>60 นาที</option>
+		</select></td>
+	</tr>
+	</table>
+	</form>
+</td></tr>
+</table>
+
+
+	<table align="center">
+	<tr align="center"><td><b>ตารางการใช้ห้อง ปีการศึกษา  2/2562<br>
+	คณะสถาปัตยกรรมและการออกแบบ ห้อง 307
+	</b></td></tr>
+	</table>
+
+	<table align=center border=1 cellspacing=0 cellpadding=3 bgcolor=#F1F1FD>
+<tr bgcolor=#EA98FF><td><b>Day</b></td><td colspan=4 width=60px><b>8:00</b></td><td colspan=4 width=60px><b>9:00</b></td><td colspan=4 width=60px><b>10:00</b></td><td colspan=4 width=60px><b>11:00</b></td><td colspan=4 width=60px><b>12:00</b></td><td colspan=4 width=60px><b>13:00</b></td><td colspan=4 width=60px><b>14:00</b></td><td colspan=4 width=60px><b>15:00</b></td><td colspan=4 width=60px><b>16:00</b></td><td colspan=4 width=60px><b>17:00</b></td><td colspan=4 width=60px><b>18:00</b></td><td colspan=4 width=60px><b>19:00</b></td><td colspan=4 width=60px><b>20:00</b></td></tr>
+<tr><td bgcolor=#EA98FF rowspan=1 align=center><b>M</b></td><td colspan=4>&nbsp;</td><td colspan=12 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>080303601&nbsp;</td><td valign=top align=right>S.10&nbsp;</td></tr><tr><td><font size=-2>08-PBS&nbsp;</font></td><td align=right><font size=-2>60110124-3RA-R, 60110124-3RB-R&nbsp;</font></td></tr></table></td><td colspan=4>&nbsp;</td><td colspan=12 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>080303601&nbsp;</td><td valign=top align=right>S.11&nbsp;</td></tr><tr><td><font size=-2>08-PBS&nbsp;</font></td><td align=right><font size=-2>60110124-3RC-R&nbsp;</font></td></tr></table></td><td colspan=20 height=50px>&nbsp;</td></tr>
+<tr><td bgcolor=#EA98FF rowspan=1 align=center><b>T</b></td><td colspan=20>&nbsp;</td><td colspan=8 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>110123212&nbsp;</td><td valign=top align=right>S.1&nbsp;</td></tr><tr><td><font size=-2>11-WTBSO&nbsp;</font></td><td align=right><font size=-2>60110124-1RA-R&nbsp;</font></td></tr></table></td><td colspan=4>&nbsp;</td><td colspan=8 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>110123212&nbsp;</td><td valign=top align=right>S.2&nbsp;</td></tr><tr><td><font size=-2>11-WTBSO&nbsp;</font></td><td align=right><font size=-2>60110124-1RB-R, 60110124-1RC-R&nbsp;</font></td></tr></table></td><td colspan=12 height=50px>&nbsp;</td></tr>
+<tr><td bgcolor=#EA98FF rowspan=1 align=center><b>W</b></td><td colspan=32>&nbsp;</td><td colspan=8 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>110123236&nbsp;</td><td valign=top align=right>S.2&nbsp;</td></tr><tr><td><font size=-2>11-SJM&nbsp;</font></td><td align=right><font size=-2>60110124-2RB-R, 60110124-2RC-R&nbsp;</font></td></tr></table></td><td colspan=8 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>110123236&nbsp;</td><td valign=top align=right>L.2&nbsp;</td></tr><tr><td><font size=-2>11-SJM&nbsp;</font></td><td align=right><font size=-2>60110124-2RB-R, 60110124-2RC-R&nbsp;</font></td></tr></table></td><td colspan=4 height=50px>&nbsp;</td></tr>
+<tr><td bgcolor=#EA98FF rowspan=1 align=center><b>H</b></td><td colspan=20>&nbsp;</td><td colspan=12 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>080103002&nbsp;</td><td valign=top align=right>S.83&nbsp;</td></tr><tr><td><font size=-2>03-WARON&nbsp;</font></td><td align=right><font size=-2>60110134-1RB-R, 60110134-1RC-R&nbsp;</font></td></tr></table></td><td colspan=20 height=50px>&nbsp;</td></tr>
+<tr><td bgcolor=#EA98FF rowspan=1 align=center><b>F</b></td><td colspan=4>&nbsp;</td><td colspan=12 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>080203906&nbsp;</td><td valign=top align=right>S.3&nbsp;</td></tr><tr><td><font size=-2>08-KMW&nbsp;</font></td><td align=right><font size=-2>60110215-2RA-R&nbsp;</font></td></tr></table></td><td colspan=4>&nbsp;</td><td colspan=12 height=50px bgcolor=#F4D9FF><table width=100%><tr><td valign=top>080203906&nbsp;</td><td valign=top align=right>S.5&nbsp;</td></tr><tr><td><font size=-2>08-KMW&nbsp;</font></td><td align=right><font size=-2>60110215-2RB-R, 60110215-2RC-R&nbsp;</font></td></tr></table></td><td colspan=20 height=50px>&nbsp;</td></tr>
+</table>
+
+		<b>หมายเหตุ</b> * = ปราจีนบุรี  &nbsp;&nbsp; **=ระยอง
+		<form>
+		<input type=button value="Print Report" onclick="window.open('roomPrint.jsp', 'printpage','toolbar=yes,location=no,directories=no,status=yes,menubar=yes,scrollbars=yes,resizable=yes,width=780,height=400')">
+		</form>
+
+		<table border="0" cellpadding="3" cellspacing="1">
+		<tr>
+			<td><b>รหัสวิชา</b></td>
+			<td><b>ชื่อวิชา</b></td>
+			<td><b>หน่วยกิต(ชั่วโมง)</b></td>
+		</tr>
+		
+		
+			<tr>
+				<td>080303601</td>
+				<td>Human Relations</td>
+				<td>3(3-0)</td>
+			</tr>
+		
+			<tr>
+				<td>110123212</td>
+				<td>ART APPRECIATION</td>
+				<td>2(2-0)</td>
+			</tr>
+		
+			<tr>
+				<td>110123236</td>
+				<td>MARKETING FOR PRODUCT DESIGN</td>
+				<td>3(2-2)</td>
+			</tr>
+		
+			<tr>
+				<td>080103002</td>
+				<td>ENGLISH II</td>
+				<td>3(3-0)</td>
+			</tr>
+		
+			<tr>
+				<td>080203906</td>
+				<td>ECONOMICS FOR INDIVIDUAL  DE</td>
+				<td>3(3-0)</td>
+			</tr>
+		
+	</table>
+	<br>
+
+
+
